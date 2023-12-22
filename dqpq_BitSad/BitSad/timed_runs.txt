@@ -1,0 +1,92 @@
+julia> include("hw_gen_run_model_b.jl")
+[ Info: Precompiling BitSAD [7f90e340-ca22-4a3e-a259-118ed254aff3]
+..... compiling Verilog ....__FROM__LIB__CODE__
+ ───────────────────────────────────────────────────────────────────────────────────────────
+                                                   Time                    Allocations      
+                                          ───────────────────────   ────────────────────────
+             Tot / % measured:                 47.5s /  94.9%           12.2GiB /  94.2%    
+
+ Section                          ncalls     time    %tot     avg     alloc    %tot      avg
+ ───────────────────────────────────────────────────────────────────────────────────────────
+ trace                                 1    12.5s   27.8%   12.5s   2.47GiB   21.5%  2.47GiB
+ xform_unbroadcast                     1    6.61s   14.7%   6.61s   1.84GiB   16.0%  1.84GiB
+ xform_record_tuples_and_splats        1    6.40s   14.2%   6.40s   1.71GiB   14.8%  1.71GiB
+ xform_squash_binary_vararg            1    5.64s   12.5%   5.64s   1.66GiB   14.4%  1.66GiB
+ xform_desplat                         1    5.42s   12.0%   5.42s   1.61GiB   13.9%  1.61GiB
+ xform_reroute_tuple_index             1    5.40s   12.0%   5.40s   1.61GiB   14.0%  1.61GiB
+ extracttrace                          1    2.30s    5.1%   2.30s    498MiB    4.2%   498MiB
+ generateverilog                       1    472ms    1.0%   472ms   83.5MiB    0.7%  83.5MiB
+ foreach_xform                         1    248ms    0.5%   248ms   37.6MiB    0.3%  37.6MiB
+ constantreplacement                   1   59.7ms    0.1%  59.7ms   13.3MiB    0.1%  13.3MiB
+ circuit_module_ctor                   1   25.2ms    0.1%  25.2ms   0.99MiB    0.0%  0.99MiB
+ ghost_tape                            1   36.8μs    0.0%  36.8μs   3.44KiB    0.0%  3.44KiB
+ ───────────────────────────────────────────────────────────────────────────────────────────...done ────────────────────────────────────────────────────────────────────
+                            Time                    Allocations      
+                   ───────────────────────   ────────────────────────
+ Tot / % measured:      46.3s /  99.6%           12.0GiB /  99.9%    
+
+ Section   ncalls     time    %tot     avg     alloc    %tot      avg
+ ────────────────────────────────────────────────────────────────────
+ gen_hw         1    46.1s  100.0%   46.1s   11.9GiB  100.0%  11.9GiB
+ ────────────────────────────────────────────────────────────────────
+julia> include("hw_gen_run_model_b.jl")
+..... compiling Verilog ....__FROM__LIB__CODE__
+ ───────────────────────────────────────────────────────────────────────────────────────────
+                                                   Time                    Allocations      
+                                          ───────────────────────   ────────────────────────
+             Tot / % measured:                  114s /  63.0%           20.3GiB /  96.5%    
+
+ Section                          ncalls     time    %tot     avg     alloc    %tot      avg
+ ───────────────────────────────────────────────────────────────────────────────────────────
+ trace                                 2    12.7s   17.7%   6.36s   2.52GiB   12.9%  1.26GiB
+ xform_unbroadcast                     2    11.9s   16.5%   5.95s   3.44GiB   17.6%  1.72GiB
+ xform_record_tuples_and_splats        2    11.8s   16.3%   5.88s   3.31GiB   16.9%  1.66GiB
+ xform_squash_binary_vararg            2    11.0s   15.2%   5.48s   3.26GiB   16.7%  1.63GiB
+ xform_desplat                         2    10.8s   15.0%   5.38s   3.21GiB   16.4%  1.60GiB
+ xform_reroute_tuple_index             2    10.8s   14.9%   5.38s   3.21GiB   16.4%  1.60GiB
+ extracttrace                          2    2.33s    3.2%   1.17s    508MiB    2.5%   254MiB
+ generateverilog                       2    474ms    0.7%   237ms   85.1MiB    0.4%  42.6MiB
+ foreach_xform                         2    248ms    0.3%   124ms   37.6MiB    0.2%  18.8MiB
+ constantreplacement                   2   59.9ms    0.1%  30.0ms   13.5MiB    0.1%  6.75MiB
+ circuit_module_ctor                   2   25.2ms    0.0%  12.6ms   1.00MiB    0.0%   511KiB
+ ghost_tape                            2   40.8μs    0.0%  20.4μs   6.88KiB    0.0%  3.44KiB
+ ───────────────────────────────────────────────────────────────────────────────────────────...done ────────────────────────────────────────────────────────────────────
+                            Time                    Allocations      
+                   ───────────────────────   ────────────────────────
+ Tot / % measured:      27.1s /  99.5%           8.07GiB /  99.9%    
+
+ Section   ncalls     time    %tot     avg     alloc    %tot      avg
+ ────────────────────────────────────────────────────────────────────
+ gen_hw         1    26.9s  100.0%   26.9s   8.06GiB  100.0%  8.06GiB
+ ────────────────────────────────────────────────────────────────────
+julia> include("hw_gen_run_model_b.jl")
+..... compiling Verilog ....__FROM__LIB__CODE__
+ ───────────────────────────────────────────────────────────────────────────────────────────
+                                                   Time                    Allocations      
+                                          ───────────────────────   ────────────────────────
+             Tot / % measured:                  147s /  67.3%           28.4GiB /  97.5%    
+
+ Section                          ncalls     time    %tot     avg     alloc    %tot      avg
+ ───────────────────────────────────────────────────────────────────────────────────────────
+ xform_unbroadcast                     3    17.2s   17.4%   5.74s   5.04GiB   18.2%  1.68GiB
+ xform_record_tuples_and_splats        3    17.1s   17.3%   5.70s   4.91GiB   17.8%  1.64GiB
+ xform_squash_binary_vararg            3    16.3s   16.5%   5.43s   4.87GiB   17.6%  1.62GiB
+ xform_desplat                         3    16.1s   16.3%   5.36s   4.81GiB   17.4%  1.60GiB
+ xform_reroute_tuple_index             3    16.1s   16.3%   5.36s   4.81GiB   17.4%  1.60GiB
+ trace                                 3    12.9s   13.1%   4.31s   2.56GiB    9.3%   873MiB
+ extracttrace                          3    2.37s    2.4%   789ms    518MiB    1.8%   173MiB
+ generateverilog                       3    475ms    0.5%   158ms   86.7MiB    0.3%  28.9MiB
+ foreach_xform                         3    248ms    0.3%  82.6ms   37.7MiB    0.1%  12.6MiB
+ constantreplacement                   3   60.1ms    0.1%  20.0ms   13.7MiB    0.0%  4.58MiB
+ circuit_module_ctor                   3   25.2ms    0.0%  8.40ms   1.00MiB    0.0%   342KiB
+ ghost_tape                            3   44.5μs    0.0%  14.8μs   10.3KiB    0.0%  3.44KiB
+ ───────────────────────────────────────────────────────────────────────────────────────────...done ────────────────────────────────────────────────────────────────────
+                            Time                    Allocations      
+                   ───────────────────────   ────────────────────────
+ Tot / % measured:      27.0s /  99.5%           8.07GiB /  99.9%    
+
+ Section   ncalls     time    %tot     avg     alloc    %tot      avg
+ ────────────────────────────────────────────────────────────────────
+ gen_hw         1    26.9s  100.0%   26.9s   8.06GiB  100.0%  8.06GiB
+ ────────────────────────────────────────────────────────────────────
+julia> 
